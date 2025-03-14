@@ -56,9 +56,10 @@ To run it:
 python src/rag.py --input data/final report.pdf
 ```
 EX:
-- What's your question? (or type 'q' to quit)
-what is the summary of the report?
-- The report examines the impact of the North American Free Trade Agreement (NAFTA) on agricultural productivity and trade in the agricultural equipment sector between the United States and Mexico. Here’s a summary of the findings and conclusions:
+What's your question? (or type 'q' to quit)
+-what is the summary of the report?
+
+The report examines the impact of the North American Free Trade Agreement (NAFTA) on agricultural productivity and trade in the agricultural equipment sector between the United States and Mexico. Here’s a summary of the findings and conclusions:
 
 - **Impact on Trade**: NAFTA significantly increased trade in agricultural equipment between the U.S. and Mexico. Following the implementation of NAFTA in 1994, the trade values generally trended upward, despite a temporary decline during the 2008 economic crisis.
 
