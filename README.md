@@ -76,6 +76,9 @@ The report examines the impact of the North American Free Trade Agreement (NAFTA
 
 This summary encapsulates the major findings and implications of the study, highlighting both achievements and challenges posed by NAFTA in the agricultural sector.
 
+![image](https://github.com/user-attachments/assets/dcd747fa-1abc-465d-b076-3b4468537fbd)
+
+
 ## File Structure
 ```
 pdf-rag/
