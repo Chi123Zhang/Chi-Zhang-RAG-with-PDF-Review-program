@@ -1,15 +1,15 @@
 # RAG with PDF Review
 
 ## Overview
-This project implements a **Retrieval-Augmented Generation (RAG) system** to **query PDFs intelligently**.  
-It utilizes **TF-IDF, Cosine Similarity, and OpenAI embeddings** to efficiently **search and highlight relevant sections in PDFs**.
+The project implements a **search-enhanced generation (RAG) system** in a large PDF dataset for **intelligent document retrieval, query processing, and automatic text highlighting**.
+It integrates **natural language processing (NLP), information retrieval (IR), and optimization techniques** to achieve **high-performance, scalable, and accurate document search**.
 
-## Features
-- **PDF Upload & Processing**: Converts PDFs into a searchable vector database.
-- **Query Processing**: Retrieves the most relevant content from the PDF based on user queries.
-- **Efficient Text Highlighting**: Finds the single most relevant paragraph instead of scattered highlights.
-- **Vectorized Search Optimization**: FAISS-based retrieval for **high-dimensional query processing**.
-- **PDF Viewer Support**: Highlights retrieved content directly in the PDF.
+## Key Features
+- **High-performance document indexing** – Uses **vector-based storage (FAISS)** and **TF-IDF + cosine similarity** for **fast and scalable search operations**.
+- **Query matching optimization** – Implements **OpenAI Embedding** to reduce retrieval errors and ensure **highly relevant text selection**.
+- **Computational efficiency** – suitable for large-scale applications through the use of **vectorized search methods and threshold-based similarity scoring** to reduce redundant calculations.
+- **Automatic text highlighting** – ensures accurate content extraction by dynamically identifying and highlighting **the most relevant passages**.
+- **Scalable and extensible design** – modular architecture supports **multi-document retrieval, real-time deployment and API integration**.
 
 ## Technologies Used
 - **PDF Parsing**: PyMuPDF (`fitz`) for extracting and highlighting text.
@@ -55,6 +55,26 @@ To run it:
 ```sh
 python src/rag.py --input data/final report.pdf
 ```
+EX:
+What's your question? (or type 'q' to quit)
+what is the summary of the report
+Hey We get best matching paragraph found:
+The report examines the impact of the North American Free Trade Agreement (NAFTA) on agricultural productivity and trade in the agricultural equipment sector between the United States and Mexico. Here’s a summary of the findings and conclusions:
+
+- **Impact on Trade**: NAFTA significantly increased trade in agricultural equipment between the U.S. and Mexico. Following the implementation of NAFTA in 1994, the trade values generally trended upward, despite a temporary decline during the 2008 economic crisis.
+
+- **Productivity Changes**: The analysis indicates a positive correlation between reduced tariff rates and increased agricultural productivity in Mexico. Lower tariffs, a direct result of NAFTA, allowed for better access to advanced machinery and technology.
+
+- **Regression Analysis**: A regression model was used to analyze the effects of tariff rates, trade exposure, and employment growth on productivity. The findings show:
+   - A significant positive impact of reduced tariff rates on productivity.
+   - An unexpected negative correlation between trade exposure and productivity, suggesting that increases in trade might lead to competitive pressures that adversely affect productivity in some cases.
+   - A strong negative correlation between employment growth and productivity, pointing to mechanization and efficiency improvements potentially leading to reduced labor demand.
+
+-**Conclusions**: While NAFTA has facilitated productivity growth through lower tariffs and increased access to technology, it has also introduced complexities, such as reduced employment growth. The report emphasizes the need for further research to understand the long-term implications of NAFTA on labor markets and income inequality in Mexico.
+
+- **Future Directions**: The report suggests that further analysis could include different control variables and explore the impacts of NAFTA on other sectors in both countries to provide a fuller picture of its economic effects【4:6†source】【4:1†source】【4:5†source】.
+
+This summary encapsulates the major findings and implications of the study, highlighting both achievements and challenges posed by NAFTA in the agricultural sector.
 
 ## File Structure
 ```
