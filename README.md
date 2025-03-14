@@ -57,7 +57,7 @@ python src/rag.py --input data/final report.pdf
 ```
 EX:
 -What's your question? (or type 'q' to quit)
--what is the summary of the report
+-**what is the summary of the report?**
 -Hey We get best matching paragraph found:
 -The report examines the impact of the North American Free Trade Agreement (NAFTA) on agricultural productivity and trade in the agricultural equipment sector between the United States and Mexico. Here’s a summary of the findings and conclusions:
 
